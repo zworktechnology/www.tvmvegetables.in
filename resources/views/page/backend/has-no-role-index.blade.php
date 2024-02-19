@@ -3,27 +3,16 @@
 @section('content')
     <div class="error_container">
         <div class="error-box">
-            <h1 style="color: #fe820e;font-size: 147px;font-weight: 900;text-align: center;">403</h1>
-            <h3 class="h2 mb-3 text-center"> Access Denied</h3>
-            <p class="h4 font-weight-normal text-center">Sorry, but you don't have permission to access this page<br />You
-                can go back to <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="">Previous
-                    Page</a></p>
+            <img src="{{ asset('assets/backend/img/access_denied.png') }}"
+                style="width: 400px; display: block; margin: auto;">
+            <h2 class="h2 mb-3 text-center" style="font-size: 30px;"> Access Denied</h2>
+            <p class="h5 font-weight-normal text-center" style="color:grey">Please contact <span style="color: #0f3800">Zwork Technology</span> for assistance <br> or refersh the page to retry.</p>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="">
+                <button class="btn btn-login" style="display: block; margin: auto; margin-top: 50px; border: 2px solid#0f3800; background-color:#0f3800; color:white; font-size: 16px;">Login as a different user</button>   
+            </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="">
                 @csrf
             </form>
         </div>
     </div>
-
-
-    {{-- <div class="error-box error-page">
-        <h1>500</h1>
-        <h3 class="h2 mb-3"><i class="fas fa-exclamation-circle"></i> Oops! Something went wrong</h3>
-        <p class="h4 font-weight-normal">I have none of these roles</p>
-        <a class="dropdown-item logout btn btn-primary" href="{{ route('logout') }}"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
-    </div> --}}
 @endsection

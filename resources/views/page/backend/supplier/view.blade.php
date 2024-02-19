@@ -45,7 +45,7 @@
         </div>
         <div class="row" >
             <div class="col-lg-3 col-sm-6 col-12">
-                <div class="dash-widget" style="background: #a08bd0;">
+                <div class="dash-widget" style="background: #0f3800;">
                     <div class="dash-widgetcontent">
                         @php $totalamounts = $tot_purchaseAmount + $paymentpurchase_discount; @endphp
                         <h5>₹ <span class="counters" data-count="{{ $totalamounts }}"></span></h5>

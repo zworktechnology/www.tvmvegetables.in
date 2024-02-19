@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="account-content">
-        <div class="login-wrapper">
-            <div class="login-content">
-                <div class="login-userset">
+        <div class="login-wrapper" style="background-image: url({{ asset('assets/backend/img/login.jpg') }}); background-repeat: no-repeat; background-size: cover;">
+            <div class="login-content" style="background-color: white;opacity: 93%;">
+                <div class="login-userset" style="width: 60% !important">
                     <div class="login-logo logo-normal">
                         <img src="{{ asset('assets/backend/img/logo.png') }}" alt="img">
                     </div>
@@ -12,7 +12,8 @@
                         <img src="{{ asset('assets/backend/img/logo-white.png') }}" alt>
                     </a>
                     <div class="login-userheading">
-                        <h3>Sign In</h3>
+                        <p style="margin-bottom: 0px;">👋 Welcome Back</p>
+                        <h3>Please login with your POS account</h3>
                     </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -48,22 +49,11 @@
                     @enderror
                     </div>
                     <div class="form-login">
-                        <div class="alreadyuser">
-                            {{-- <h4><a href="javascript::void(o);" class="hover-a">Forgot Password?</a></h4> --}}
-                        </div>
-                    </div>
-                    <div class="form-login">
                         <button class="btn btn-login"
-                                        type="submit">Sign In</button>
+                                        type="submit">Log In</button>
                     </div>
                     </form>
-                    <div class="signinform text-center">
-                        {{-- <h4>Don’t have an account? <a href="{{ route('register') }}" class="hover-a">Sign Up</a></h4> --}}
-                    </div>
                 </div>
-            </div>
-            <div class="login-img">
-                <img src="{{ asset('assets/backend/img/login.jpg') }}" alt="img">
             </div>
         </div>
     </div>

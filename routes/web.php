@@ -373,21 +373,21 @@ Route::get('/allcustomer_pdf_export', [CustomerController::class, 'allcustomer_p
 
 Route::get('/purchasebranch/{branch_id}', [PurchaseController::class, 'purchasebranch']);
 Route::get('/purchase_branchdata/{today}/{branch_id}', [PurchaseController::class, 'purchase_branchdata']);
-Route::get('/purchaseorderbranch/{branch_id}', [PurchaseController::class, 'purchaseorderbranch']);
+Route::get('/purchaseorderbranch/{branch_id}', [PurchaseController::class, 'purchaseorderbranch'])->name('purchase.order.branch');;
 Route::get('/purchaseorder_branchdata/{today}/{branch_id}', [PurchaseController::class, 'purchaseorder_branchdata']);
 
 Route::get('/salesbranch/{branch_id}', [SalesController::class, 'salesbranch']);
 Route::get('/sales_branchdata/{today}/{branch_id}', [SalesController::class, 'sales_branchdata']);
-Route::get('/salesorderbranch/{branch_id}', [SalesController::class, 'salesorderbranch']);
+Route::get('/salesorderbranch/{branch_id}', [SalesController::class, 'salesorderbranch'])->name('sales.order.branch');
 Route::get('/salesorder_branchdata/{today}/{branch_id}', [SalesController::class, 'salesorder_branchdata']);
 
-Route::get('/expensebranch/{branch_id}', [ExpenceController::class, 'expensebranch']);
+Route::get('/expensebranch/{branch_id}', [ExpenceController::class, 'expensebranch'])->name('expense.branch');
 Route::get('/expensedata_branch/{today}/{branch_id}', [ExpenceController::class, 'expensedata_branch']);
 
-Route::get('/purchasepaymentbranch/{branch_id}', [PurchasePaymentController::class, 'purchasepaymentbranch']);
+Route::get('/purchasepaymentbranch/{branch_id}', [PurchasePaymentController::class, 'purchasepaymentbranch'])->name('purchase.payment.branch');
 Route::get('/purchasepayment_branchdata/{today}/{branch_id}', [PurchasePaymentController::class, 'purchasepayment_branchdata']);
 
-Route::get('/salespaymentbranch/{branch_id}', [SalespaymentController::class, 'salespaymentbranch']);
+Route::get('/salespaymentbranch/{branch_id}', [SalespaymentController::class, 'salespaymentbranch'])->name('sales.payment.branch');
 Route::get('/salespayment_branchdata/{today}/{branch_id}', [SalespaymentController::class, 'salespayment_branchdata']);
 
 

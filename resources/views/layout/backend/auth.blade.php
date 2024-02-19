@@ -7,7 +7,7 @@
 
 </head>
 
-<body style="text-transform: uppercase;">
+<body style="">
 
     <div class="main-wrapper page-wrapper">
 

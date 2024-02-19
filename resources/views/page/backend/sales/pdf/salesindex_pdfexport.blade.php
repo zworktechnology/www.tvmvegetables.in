@@ -84,7 +84,7 @@
 <body>
    <div class="logoname">
         <div>
-            <h4  style="text-transform: uppercase; color:red;text-align:center;">SALES - BILL</h4>
+            <h4  style="color:red;text-align:center;">SALES - BILL</h4>
             <h4 style="text-align:right;">Date : {{$today}}</h4>
         </div>
     </div>

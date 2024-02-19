@@ -86,7 +86,7 @@
 <body>
    <div class="logoname">
         <div>
-            <h4  style="text-transform: uppercase; color:green">Purchase - {{ $branch_name }}</h4>
+            <h4  style="color:green">Purchase - {{ $branch_name }}</h4>
         </div>
     </div>
    

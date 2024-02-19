@@ -22,12 +22,12 @@
                      <div class="row" >
                         <div class="logoname">
                            <div>
-                                 <h4  style="text-transform: uppercase; color:green;text-align:center;">Customer Balance Report</h4>
+                                 <h4  style="color:green;text-align:center;">Customer Balance Report</h4>
                            </div>
                         </div>
                         <div class="row" style="margin-top: 1%;">
                            <div class="col-lg-4 col-sm-4 col-12 d-flex">
-                                 <div class="dash-count" style="background-color: #a08bd0;">
+                                 <div class="dash-count" style="background-color: #0f3800;">
                                     <div class="dash-counts">
                                        <h4>Rs. {{ $TotalSale }}</h4>
                                        <h5>Total Sale </h5>

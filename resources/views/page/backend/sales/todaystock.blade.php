@@ -51,7 +51,7 @@
 
                             
                              <div class="col-lg-8 col-sm-8 col-8 border">
-                                 <span class="" style="text-transform: uppercase; vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;font-weight: 700;line-height: 35px; ">{{$p_datas['product_name']}}</span>
+                                 <span class="" style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;font-weight: 700;line-height: 35px; ">{{$p_datas['product_name']}}</span>
                               </div>
                              
                               <div class="col-lg-1 col-sm-1 col-1 border">

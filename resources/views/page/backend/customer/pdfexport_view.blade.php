@@ -85,7 +85,7 @@
    <div class="logoname">
         <div>
             <h4 style="text-align:right;">Date : {{$today}}</h4>
-            <h4  style="text-transform: uppercase; color:green">sales - {{ $branch_name }}</h4>
+            <h4  style="color:green">sales - {{ $branch_name }}</h4>
         </div>
     </div>
    

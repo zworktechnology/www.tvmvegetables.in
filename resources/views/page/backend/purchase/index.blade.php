@@ -19,7 +19,7 @@
                                         value="Search" /></div>
                             </div>
                         </form>
-                        <a href="{{ route('purchase.create') }}" class="btn btn-added" style="margin-right: 10px;background-color: #9571e7;">Add
+                        <a href="{{ route('purchase.create') }}" class="btn btn-added" style="margin-right: 10px;background-color: #0f3800;">Add
                             Purchase</a>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                         </div>
                     </a>
                     <a href="#todaystock{{ $allbranches->id }}" data-bs-toggle="modal"data-id="{{ $allbranches->id }}"
-                            data-bs-target=".todaystock-modal-xl{{ $allbranches->id }}" class="btn btn-added " style="color:white;background-color: #9571e7;font-size: 13px;font-weight: 600;">Current Details</a>
+                            data-bs-target=".todaystock-modal-xl{{ $allbranches->id }}" class="btn btn-added " style="color:white;background-color: #0f3800;font-size: 13px;font-weight: 600;">Current Details</a>
 
                             <div class="modal fade todaystock-modal-xl{{ $allbranches->id }}" tabindex="-1"role="dialog" data-bs-backdrop="static"
                                 aria-labelledby="todaystockLargeModalLabel{{ $allbranches->id }}"aria-hidden="true">
