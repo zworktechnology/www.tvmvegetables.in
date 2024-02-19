@@ -1,12 +1,12 @@
 <div class="header">
     <div class="header-left active">
-        <a href="index.html" class="logo logo-normal">
+        <a href="{{ route('home') }}" class="logo logo-normal">
             <img src="{{ asset('assets/backend/img/logo.png') }}" alt>
         </a>
-        <a href="index.html" class="logo logo-white">
+        <a href="{{ route('home') }}" class="logo logo-white">
             <img src="{{ asset('assets/backend/img/logo-white.png') }}" alt>
         </a>
-        <a href="index.html" class="logo-small">
+        <a href="{{ route('home') }}" class="logo-small">
             <img src="{{ asset('assets/backend/img/logo-small.png') }}" alt>
         </a>
         <a id="toggle_btn" href="javascript:void(0);">
@@ -57,10 +57,10 @@
                         </div>
                     </div>
                     <hr class="m-0">
-                    <a class="dropdown-item" href="profile.html"> <i class="me-2" data-feather="user"></i>
-                        My Profile</a>
-                    <a class="dropdown-item" href="generalsettings.html"><i class="me-2"
-                            data-feather="settings"></i>Settings</a>
+                    <a class="dropdown-item" href="{{ route('profile') }}"> <i class="me-2" data-feather="user"></i>
+                        Upadte Profile</a>
+                    <a class="dropdown-item" href="{{ route('settings') }}"><i class="me-2"
+                            data-feather="settings"></i>Change password</a>
                     <hr class="m-0">
                     <a class="dropdown-item logout pb-0" href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><img
@@ -78,8 +78,8 @@
         <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
         <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="profile.html">My Profile</a>
-            <a class="dropdown-item" href="generalsettings.html">Settings</a>
+            <a class="dropdown-item" href="{{ route('profile') }}">Upadte Profile</a>
+            <a class="dropdown-item" href="{{ route('settings') }}">Change password</a>
             <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

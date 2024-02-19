@@ -14,6 +14,7 @@ use App\Http\Controllers\SalesController;
 use App\Http\Controllers\ExpenceController;
 use App\Http\Controllers\PurchasePaymentController;
 use App\Http\Controllers\SalespaymentController;
+use App\Http\Controllers\ChangeProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,6 +39,18 @@ Auth::routes();
 
 // BACKEND - ROUTE - WITH SANTUM VERIFIED
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+
+    // CHANGE PASSWORD - INDEX
+    Route::middleware(['auth:sanctum', 'verified'])->get('/zwork-admin/password_change', [ChangeProfileController::class, 'index_password'])->name('settings');
+
+    // CHANGE PASSWORD - STORE
+    Route::middleware(['auth:sanctum', 'verified'])->post('/zwork-admin/password_update', [ChangeProfileController::class, 'update_password'])->name('change.password');
+
+    // PROFILE - INDEX
+    Route::middleware(['auth:sanctum', 'verified'])->get('/zwork-admin/profile_change', [ChangeProfileController::class, 'index_profile'])->name('profile');
+
+    // PROFILE - STORE
+    Route::middleware(['auth:sanctum', 'verified'])->post('/zwork-admin/profile_update', [ChangeProfileController::class, 'update_profile'])->name('change.profile');
 
     // DASHBOARD
     Route::middleware(['auth:sanctum', 'verified'])->get('/home', [HomeController::class, 'index'])->name('home');

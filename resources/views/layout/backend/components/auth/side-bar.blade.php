@@ -25,7 +25,7 @@
                     <h6 class="submenu-hdr">Sales</h6>
                     <ul>
                         <li class="{{ Route::is('customer.index', 'customer.store', 'customer.edit', 'customer.delete', 'customer.checkduplicate', 'customer.view', 'customer.viewfilter', 'customer.branchdata') ? 'active' : '' }}">
-                            <a href="{{ route('customer.branchdata', ['branch_id' => '1']) }}"><i data-feather="user"></i><span>Customers</span></a>
+                            <a href="{{ route('customer.branchdata', ['branch_id' => '1']) }}"><i data-feather="users"></i><span>Customers</span></a>
                         </li>
                         <li class="{{ Route::is('sales.order.branch', 'salesorder.salesorder_index', 'salesorder.salesorder_store', 'salesorder.salesorder_create', 'salesorder.salesorder_edit', 'salesorder.salesorder_update', 'salesorder.salesorder_branchdata', 'salesorder.salesorder_printview', 'salesorder.salesorder_datefilter') ? 'active' : '' }}">
                             <a href="/salesorderbranch/1"><i data-feather="shopping-cart"></i><span>Sales</span></a>
@@ -93,9 +93,15 @@
                     <ul>
                         @hasrole('Super-Admin')
                         <li class="{{ Route::is('invite.index', 'invite.store') ? 'active' : '' }}">
-                            <a href="{{ route('invite.index') }}"><i data-feather="user-check"></i><span>Managers</span></a>
+                            <a href="{{ route('invite.index') }}"><i data-feather="user"></i><span>Managers</span></a>
                         </li>
                         @endhasrole
+                        <li class="{{ Route::is('profile') ? 'active' : '' }}">
+                            <a href="{{ route('profile') }}"><i data-feather="user-check"></i><span>Upadte Profile</span></a>
+                        </li>
+                        <li class="{{ Route::is('settings') ? 'active' : '' }}">
+                            <a href="{{ route('settings') }}"><i data-feather="settings"></i><span>Change password</span></a>
+                        </li>
                     </ul>
                 </li>
             </ul>
