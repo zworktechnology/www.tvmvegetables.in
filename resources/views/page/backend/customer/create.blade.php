@@ -10,7 +10,7 @@
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="form-group">
                             <label>Name <span style="color: red;">*</span></label>
-                            <input type="text" name="name" placeholder="Enter Customer name">
+                            <input required type="text" name="name" placeholder="Enter Customer name">
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-6 col-12">
@@ -46,7 +46,7 @@
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="form-group">
                             <label>Old Balance <span style="color: red;">*</span></label>
-                            <input type="text" name="balance_amount" placeholder="Enter Old Balance">
+                            <input required type="text" name="balance_amount" placeholder="Enter Old Balance">
                         </div>
                     </div>
                     <hr>

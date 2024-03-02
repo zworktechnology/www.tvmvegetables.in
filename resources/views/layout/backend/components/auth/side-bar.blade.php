@@ -33,6 +33,9 @@
                         <li class="{{ Route::is('sales.payment.branch', 'salespayment.index', 'salespayment.store', 'salespayment.create', 'salespayment.store', 'salespayment.edit', 'salespayment.update', 'salespayment.branchdata', 'salespayment.datefilter') ? 'active' : '' }}">
                             <a href="/salespaymentbranch/1"><i data-feather="dollar-sign"></i><span>Payment</span></a>
                         </li>
+                        <li class="{{ Route::is('sales.report', 'sales.report_view') ? 'active' : '' }}">
+                            <a href="{{ route('sales.report') }}"><i data-feather="bar-chart-2"></i><span>Sales Report</span></a>
+                        </li>
                     </ul>
                 </li>
                 <li class="submenu-open">
@@ -47,24 +50,16 @@
                         <li class="{{ Route::is('purchase.payment.branch', 'purchasepayment.index', 'purchasepayment.store', 'purchasepayment.create', 'purchasepayment.edit', 'purchasepayment.update', 'purchasepayment.delete', 'purchasepayment.branchdata', 'purchasepayment.datefilter') ? 'active' : '' }}">
                             <a href="/purchasepaymentbranch/1"><i data-feather="dollar-sign"></i></i><span>Payment</span></a>
                         </li>
-                    </ul>
-                </li>
-                <li class="submenu-open">
-                    <h6 class="submenu-hdr">Inventory</h6>
-                    <ul>
-                        <li class="{{ Route::is('expense.branch', 'expence.index', 'expence.store', 'expence.create', 'expence.edit', 'expence.update', 'expence.branchdata', 'expence.datefilter') ? 'active' : '' }}">
-                            <a href="/expensebranch/1"><i data-feather="file-text"></i><span>Expence</span></a>
+                        <li class="{{ Route::is('purchase.report', 'purchase.report_view') ? 'active' : '' }}">
+                            <a href="{{ route('purchase.report') }}"><i data-feather="pie-chart"></i><span>Purchase Report</span></a>
                         </li>
                     </ul>
                 </li>
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">Reports</h6>
                     <ul>
-                        <li class="{{ Route::is('purchase.report', 'purchase.report_view') ? 'active' : '' }}">
-                            <a href="{{ route('purchase.report') }}"><i data-feather="pie-chart"></i><span>Purchase Report</span></a>
-                        </li>
-                        <li class="{{ Route::is('sales.report', 'sales.report_view') ? 'active' : '' }}">
-                            <a href="{{ route('sales.report') }}"><i data-feather="bar-chart-2"></i><span>Sales Report</span></a>
+                        <li class="{{ Route::is('expense.branch', 'expence.index', 'expence.store', 'expence.create', 'expence.edit', 'expence.update', 'expence.branchdata', 'expence.datefilter') ? 'active' : '' }}">
+                            <a href="/expensebranch/1"><i data-feather="file-text"></i><span>Expence</span></a>
                         </li>
                         <li class="{{ Route::is('expence.report', 'expence.report_view') ? 'active' : '' }}">
                             <a href="{{ route('expence.report') }}"><i data-feather="file"></i><span>Expense Report</span></a>
@@ -74,9 +69,9 @@
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">General</h6>
                     <ul>
-                        <li class="{{ Route::is('branch.index', 'branch.store', 'branch.edit', 'branch.delete') ? 'active' : '' }}">
+                        {{-- <li class="{{ Route::is('branch.index', 'branch.store', 'branch.edit', 'branch.delete') ? 'active' : '' }}">
                             <a href="{{ route('branch.index') }}"><i data-feather="map"></i><span>Branch</span></a>
-                        </li>
+                        </li> --}}
                         <li class="{{ Route::is('unit.index', 'unit.store', 'unit.edit', 'unit.delete') ? 'active' : '' }}" hidden>
                             <a href="{{ route('unit.index') }}"><i data-feather="map"></i><span>Unit</span></a>
                         </li>
