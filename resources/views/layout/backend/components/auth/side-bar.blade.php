@@ -69,9 +69,9 @@
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">General</h6>
                     <ul>
-                        <li class="{{ Route::is('branch.index', 'branch.store', 'branch.edit', 'branch.delete') ? 'active' : '' }}">
+                        {{-- <li class="{{ Route::is('branch.index', 'branch.store', 'branch.edit', 'branch.delete') ? 'active' : '' }}">
                             <a href="{{ route('branch.index') }}"><i data-feather="map"></i><span>Branch</span></a>
-                        </li>
+                        </li> --}}
                         <li class="{{ Route::is('unit.index', 'unit.store', 'unit.edit', 'unit.delete') ? 'active' : '' }}" hidden>
                             <a href="{{ route('unit.index') }}"><i data-feather="map"></i><span>Unit</span></a>
                         </li>
