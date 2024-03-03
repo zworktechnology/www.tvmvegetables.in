@@ -143,12 +143,38 @@
                                         <div class="col-lg-4 col-sm-4 col-12 border">
                                             <span class=""
                                                 style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:red;font-weight: 700;line-height: 35px; ">
+                                                Extra Cost</span>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-12 border">
+                                            <span class=""
+                                                style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;line-height: 35px; "><span
+                                                    class="">{{$Sales_datas['extra_cost']}}</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-12 ">
+                                            <span class=""
+                                                style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;font-weight: 700;line-height: 35px; "></span>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-12 ">
+                                            <span class=""
+                                                style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;font-weight: 700;line-height: 35px; "></span>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-12 ">
+                                            <span class=""
+                                                style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;font-weight: 700;line-height: 35px; "></span>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 col-12 border">
+                                            <span class=""
+                                                style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:red;font-weight: 700;line-height: 35px; ">
                                                 Total</span>
                                         </div>
                                         <div class="col-lg-2 col-sm-2 col-12 border">
                                             <span class=""
                                                 style="vertical-align: inherit;vertical-align: inherit;font-size: 14px;color:#000;line-height: 35px; "><span
-                                                    class="sales_total_amount"></span></span>
+                                                    class=""></span>{{$Sales_datas['gross_amount']}}</span>
                                         </div>
                                     </div>
                                 </div>

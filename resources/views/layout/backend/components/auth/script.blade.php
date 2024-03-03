@@ -794,7 +794,7 @@ $(".purchaseclose").click(function() {
     });
 
 
-        $(document).on("blur", "input[name*=count]", function() {
+        $(document).on("keyup", "input[name*=count]", function() {
          var count = $(this).val();
          var price_per_kg = $(this).parents('tr').find('.price_per_kg').val();
          var total = count * price_per_kg;
@@ -846,7 +846,7 @@ $(".purchaseclose").click(function() {
         });
 
 
-        $(document).on("blur", "input[name*=price_per_kg]", function() {
+        $(document).on("keyup", "input[name*=price_per_kg]", function() {
          var price_per_kg = $(this).val();
          var count = $(this).parents('tr').find('.count').val();
          var total = count * price_per_kg;
